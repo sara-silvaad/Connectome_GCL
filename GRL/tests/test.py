@@ -148,7 +148,6 @@ def test_model(
     elif model.model_name in [
         "EncoderClassifierSC",
         "EncoderClassifierSCAlternateDA",
-        "FullyConnected",
     ]:
         results = test_model_classifier(
             model, path_to_checkpoint, test_loader, criterion_classif

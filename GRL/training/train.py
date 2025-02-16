@@ -470,7 +470,6 @@ def train_and_evaluate(
     if model.model_name in [
         "EncoderClassifierSC",
         "EncoderClassifierSCAlternateDA",
-        "FullyConnected",
     ]:
         results = train_and_evaluate_classifier(
             model,
