@@ -18,20 +18,22 @@ This repository contains the code developed for the article Graph Contrastive Le
       ...
       | subject_n
 
+The file scs_desikan.mat contains the structural connectivity matrices, corr_matrices holds the functional connectivity matrices, and HCP_behavioral.csv includes demographic and behavioral information. All data are derived from the HCP(https://www.humanconnectome.org/study/hcp-young-adult).
       
 # Running the code
 
-1. Change DATA_PATH and FC_DOWNLOAD_NAME in config files
+1. Change DATA_PATH and FC_DOWNLOAD_NAME in the config files to match the directory structure where the data is stored. 
 
 2. Run
-   2.1 CL
-   Stand on folder GCL and python run_mains_supervised.py with no arguments
-   run_mains_supervised.py ...
+   
+   2.1 Graph Contrastive Learning (GCL)
+   Navigate to the GCL folder and run the following command: python run_mains_supervised.py
+   The script run_mains_supervised.py trains a Contrastive Learning model with and without data augmentation. It first performs the pre-training step, followed by the fine-tuning step.
 
-   2.2 No CL
-   Stand on folder GRL and python run_models_{}.py where {} can be one of DA or GCN to train the model with and without data augmentation respectively:
-     run_models_DA.py
-     run_models_GCN.py
+   2.2 Graph Representation Learning (GRL) - without Contrastive Learning
+   Navigate to the GRL folder and run one of the following commands:
+   - python run_models_DA.py  # Train the model with data augmentation  
+   - python run_models_GCN.py  # Train the model without data augmentation  
 
 
 # Contact
