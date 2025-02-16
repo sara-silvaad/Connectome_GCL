@@ -4,11 +4,12 @@ from models.GCN_encoder_decoder_classifier import (
 )
 
 DATA_PATH = "/datos/projects/ssilva/data"
+FC_DOWNLOAD_NAME = '87_nodes_downloaded_on_imerl'
 
 # data
 ROOT_PATH = f"{DATA_PATH}/processed_datasets/"
 MATRIX_FILE = f"{DATA_PATH}/original_data/scs_desikan.mat"
-FC_PATHS = f"{DATA_PATH}/87_nodes_downloaded_on_imerl/corr_matrices/"
+FC_PATHS = f"{DATA_PATH}/{FC_DOWNLOAD_NAME}/corr_matrices/"
 
 DATASET_NAME = "Gender"
 
