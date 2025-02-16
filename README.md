@@ -8,14 +8,23 @@ This repository contains the code developed for the article Graph Contrastive Le
 "/datos/projects/ssilva/data" has the following folder structure:
 
 | data
+
   | processed_datasets -> where datasets created by Dataset class will be stored
+  
   | original_data 
+  
     | scs_desikan.mat
+    
     | HCP_behavioral.csv
+    
   | {FC_DOWNLOAD_NAME}
+  
     | corr_matrices
+    
       |subject_0
+      
       ...
+      
       | subject_n
 
 The file scs_desikan.mat contains the structural connectivity matrices, corr_matrices holds the functional connectivity matrices, and HCP_behavioral.csv includes demographic and behavioral information. All data are derived from the HCP(https://www.humanconnectome.org/study/hcp-young-adult).
