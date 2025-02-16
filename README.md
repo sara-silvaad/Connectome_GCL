@@ -28,10 +28,12 @@ The file scs_desikan.mat contains the structural connectivity matrices, corr_mat
 2. Run
    
    2.1 Graph Contrastive Learning (GCL)
+   
    Navigate to the GCL folder and run the following command: python run_mains_supervised.py
    The script run_mains_supervised.py trains a Contrastive Learning model with and without data augmentation. It first performs the pre-training step, followed by the fine-tuning step.
 
    2.2 Graph Representation Learning (GRL) - without Contrastive Learning
+   
    Navigate to the GRL folder and run one of the following commands:
    - python run_models_DA.py  # Train the model with data augmentation  
    - python run_models_GCN.py  # Train the model without data augmentation  
@@ -39,4 +41,4 @@ The file scs_desikan.mat contains the structural connectivity matrices, corr_mat
 
 # Contact
 
-Any questions regarding the code, please refer to Sara Silva at ssilva@fing.edu.uy or Martin Schmidt at mschmidt@fing.edu.uy
+Any questions regarding the code, please refer to Sara Silva at ssilva@fing.edu.uy or Martin Schmidt at mschmidt@fing.edu.uy.
